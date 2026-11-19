@@ -55,6 +55,15 @@ DeepAgents, and Hermes. Adapter-specific options stay under
 
 Each harness example selects its adapter with `default_harness`.
 
+The table below summarizes values configured in the checked-in examples; it
+does not assert model availability or runtime compatibility.
+
+| Example | Default harness | Configured model (provider / name) | MCP servers configured |
+| --- | --- | --- | --- |
+| [Codex](agent-codex.yaml) | `codex` | `nvidia` / `nvidia-nemotron-3-5-lightning-30b-a3b` | No (`mcp.servers: {}`) |
+| [DeepAgents](agent-deepagents.yaml) | `deepagents` | `nvidia` / `nvidia-nemotron-3-5-lightning-30b-a3b` | No (`mcp.servers: {}`) |
+| [Claude](agent-claude.yaml) | `claude` | `anthropic` / `anthropic/claude-sonnet-4-5` | No (`mcp.servers: {}`) |
+
 ## Model parameters
 
 Models can set optional `top_p` and `max_tokens` parameters:
